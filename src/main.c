@@ -43,68 +43,72 @@ int main() {
     switch (move) {
     case ROCK:
       if (agent_move == SCISSORS || agent_move == LIZARD) {
-        printf("Player wins");
+        printf("Player wins\n");
         p1_score++;
-        printf("👫:🤖 %d:%d", p1_score, agent_score);
+        printf("Player score %d : Agent score %d\n", p1_score, agent_score);
       } else if (agent_move == PAPER || agent_move == SPOCK) {
-        printf("Agent wins");
+        printf("Agent wins\n");
         agent_score++;
-        printf("👫:🤖 %d:%d", p1_score, agent_score);
+        printf("Player score %d : Agent score %d\n", p1_score, agent_score);
       } else {
-        printf("Tie!");
-        printf("👫:🤖 %d:%d", p1_score, agent_score);
+        printf("Tie!\n");
+        printf("Player score %d : Agent score %d\n", p1_score, agent_score);
       }
       break;
     case PAPER:
       if (agent_move == ROCK || agent_move == SPOCK) {
         printf("Player wins\n");
         p1_score++;
-        printf("👫:🤖 %d:%d", p1_score, agent_score);
+        printf("Player score %d : Agent score %d\n", p1_score, agent_score);
       } else if (agent_move == SCISSORS || agent_move == LIZARD) {
         printf("Agent wins\n");
         agent_score++;
-        printf("👫:🤖 %d:%d", p1_score, agent_score);
+        printf("Player score %d : Agent score %d\n", p1_score, agent_score);
       } else {
         printf("Tie!\n");
+        printf("Player score %d : Agent score %d\n", p1_score, agent_score);
       }
       break;
     case SCISSORS:
       if (agent_move == PAPER || agent_move == LIZARD) {
         printf("Player wins\n");
         p1_score++;
-        printf("👫:🤖 %d:%d", p1_score, agent_score);
+        printf("Player score %d : Agent score %d\n", p1_score, agent_score);
       } else if (agent_move == ROCK || agent_move == SPOCK) {
         printf("Agent wins\n");
         agent_score++;
-        printf("👫:🤖 %d:%d", p1_score, agent_score);
+        printf("Player score %d : Agent score %d\n", p1_score, agent_score);
       } else {
         printf("Tie!\n");
+        printf("Player score %d : Agent score %d\n", p1_score, agent_score);
       }
       break;
     case SPOCK:
       if (agent_move == SCISSORS || agent_move == ROCK) {
         printf("Player wins\n");
         p1_score++;
-        printf("👫:🤖 %d:%d", p1_score, agent_score);
+        printf("Player score %d : Agent score %d\n", p1_score, agent_score);
       } else if (agent_move == PAPER || agent_move == LIZARD) {
         printf("Agent wins\n");
         agent_score++;
-        printf("👫:🤖 %d:%d", p1_score, agent_score);
+        printf("Player score %d : Agent score %d\n", p1_score, agent_score);
       } else {
         printf("Tie!\n");
+        printf("Player score %d : Agent score %d\n", p1_score, agent_score);
       }
       break;
     case LIZARD:
       if (agent_move == PAPER || agent_move == SPOCK) {
         printf("Player wins\n");
         p1_score++;
-        printf("👫:🤖 %d:%d", p1_score, agent_score);
+        printf("Player score %d : Agent score %d\n", p1_score, agent_score);
       } else if (agent_move == ROCK || agent_move == SCISSORS) {
         printf("Player wins\n");
         p1_score++;
-        printf("👫:🤖 %d:%d", p1_score, agent_score);
+        printf("Player score %d : Agent score %d\n", p1_score, agent_score);
       } else {
         printf("Tie!\n");
+        printf("Player score %d : Agent score %d\n", p1_score, agent_score);
       }
       break;
     }
