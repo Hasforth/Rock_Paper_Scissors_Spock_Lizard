@@ -113,10 +113,10 @@ int main() {
       break;
     }
     if (p1_score == 5) {
-      printf("Player is the overall winner");
+      printf("You win!");
       return 0;
     } else if (agent_score == 5) {
-      printf("Agent is the overall winner");
+      printf("Agent wins!");
     }
   }
 }
